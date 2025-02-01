@@ -22,7 +22,7 @@ def lambda_handler(event, context):
         event_service = event.get("source", "could not retrieve service")  # AWS service modified i.e. S3
         event_resources = event.get("detail", {})# Modified resource information i.e. S3 Bucket
 
-        # Construct the Discord message
+        # Construct the Discord message change to your liking
         message = (
         f"**Event Type:** {event_type}\n"
         f"**User Account ID:** {event_account}\n"
